@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorlib Wizard 8 Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100">
+
+  <!-- WIZARD SCREEN -->
+  <div id="wizard-screen" class="wrapper bg-white">
+    <div class="wizard">
+
+      <!-- STEP NAVIGATION -->
+      <div class="steps">
+        <ul class="d-flex justify-content-center list-unstyled mb-0">
+          <li data-step="0" class="position-relative text-center">
+            <a href="#">
+              <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1-active.png" alt="Step 1" class="step-icon d-block mx-auto">
+              <span class="step-order d-block text-uppercase">Step 01</span>
+            </a>
+            <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-arrow.png" alt="" class="step-arrow position-absolute">
+          </li>
+          <li data-step="1" class="position-relative text-center">
+            <a href="#">
+              <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-2.png" alt="Step 2" class="step-icon d-block mx-auto">
+              <span class="step-order d-block text-uppercase">Step 02</span>
+            </a>
+            <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-arrow.png" alt="" class="step-arrow position-absolute">
+          </li>
+          <li data-step="2" class="position-relative text-center">
+            <a href="#">
+              <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3.png" alt="Step 3" class="step-icon d-block mx-auto">
+              <span class="step-order d-block text-uppercase">Step 03</span>
+            </a>
+            <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-arrow.png" alt="" class="step-arrow position-absolute">
+          </li>
+          <li data-step="3" class="text-center">
+            <a href="#">
+              <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-4.png" alt="Step 4" class="step-icon d-block mx-auto">
+              <span class="step-order d-block text-uppercase">Step 04</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- STEP CONTENT -->
+      <div class="content">
+
+        <!-- STEP 1: BASIC DETAILS -->
+        <div class="step-panel active">
+          <h3 class="text-center text-uppercase">Basic Details</h3>
+          <div class="row form-row-gap">
+            <div class="col-12 col-md-6">
+              <div class="input-holder position-relative">
+                <input type="text" id="fname" class="form-control" placeholder="First Name">
+                <i class="zmdi zmdi-account"></i>
+                <div class="invalid-feedback">First name is required.</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="input-holder position-relative">
+                <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                <i class="zmdi zmdi-account"></i>
+                <div class="invalid-feedback">Last name is required.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-row-gap">
+            <div class="col-12 col-md-6">
+              <div class="input-holder position-relative">
+                <input type="email" id="email" class="form-control" placeholder="Email ID">
+                <i class="zmdi zmdi-email"></i>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="input-holder position-relative">
+                <input type="text" id="userid" class="form-control" placeholder="Your User ID">
+                <i class="zmdi zmdi-account-box-o"></i>
+                <div class="invalid-feedback">User ID is required.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-row-gap">
+            <div class="col-12 col-md-6">
+              <div class="input-holder position-relative">
+                <input type="text" id="country" class="form-control" placeholder="Country">
+                <i class="zmdi zmdi-map"></i>
+                <div class="invalid-feedback">Country is required.</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="input-holder position-relative">
+                <input type="text" id="state" class="form-control" placeholder="State">
+                <i class="zmdi zmdi-pin"></i>
+                <div class="invalid-feedback">State is required.</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="input-holder position-relative">
+                <input type="text" id="city" class="form-control" placeholder="City">
+                <i class="zmdi zmdi-pin-drop"></i>
+                <div class="invalid-feedback">City is required.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-row-gap">
+            <div class="col-12 col-md-6">
+              <div class="input-holder position-relative">
+                <input type="tel" id="phone" class="form-control" placeholder="Phone Number">
+                <i class="zmdi zmdi-smartphone-android"></i>
+                <div class="invalid-feedback">Enter a valid phone number (10-15 digits).</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="input-holder password eye-only position-relative">
+                <input type="password" id="refcode" class="form-control" placeholder="Reference Coder">
+                <i class="zmdi zmdi-eye toggle-eye"></i>
+                <div class="invalid-feedback">Reference coder is required.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: PASSWORD CHANGE -->
+        <div class="step-panel">
+          <h3 class="text-center text-uppercase">Password Change</h3>
+          <div class="row form-row-gap">
+            <div class="col-12">
+              <div class="input-holder password position-relative">
+                <input type="password" id="cur-pass" class="form-control" placeholder="Current Password">
+                <i class="zmdi zmdi-eye toggle-eye"></i>
+                <i class="zmdi zmdi-lock-open"></i>
+                <div class="invalid-feedback">Current password is required.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-row-gap">
+            <div class="col-12">
+              <div class="input-holder password position-relative">
+                <input type="password" id="new-pass" class="form-control" placeholder="New Password">
+                <i class="zmdi zmdi-eye toggle-eye"></i>
+                <i class="zmdi zmdi-lock-open"></i>
+                <div class="invalid-feedback">New password must be at least 8 characters.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-row-gap">
+            <div class="col-12">
+              <div class="input-holder password position-relative">
+                <input type="password" id="confirm-pass" class="form-control" placeholder="Confirm New Password">
+                <i class="zmdi zmdi-eye toggle-eye"></i>
+                <i class="zmdi zmdi-lock-open"></i>
+                <div class="invalid-feedback">Please confirm your new password.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3: MY CART -->
+        <div class="step-panel">
+          <h3 class="text-center text-uppercase">My Cart</h3>
+          <table class="cart">
+            <thead>
+              <tr>
+                <th class="product-thumb"></th>
+                <th class="product-detail">Product Detail</th>
+                <th class="product-quantity">Quantity</th>
+                <th class="total-price">Total Price</th>
+                <th class="product-remove"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-price="35">
+                <td class="product-thumb" data-title="Image">
+                  <span class="item-thumb">
+                    <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/item-1.jpg" alt="Cherry">
+                  </span>
+                </td>
+                <td class="product-detail" data-title="Product">
+                  <a href="#">Cherry</a>
+                  <span>$ 35</span>
+                </td>
+                <td class="product-quantity" data-title="Quantity">
+                  <div class="quantity">
+                    <span class="qty-plus">+</span>
+                    <input type="number" class="qty-input" value="1" min="1">
+                    <span class="qty-minus">-</span>
+                  </div>
+                </td>
+                <td class="total-price" data-title="Total">
+                  <span class="row-total">$ 35</span>
+                </td>
+                <td class="product-remove" data-title="">
+                  <a href="#"><i class="zmdi zmdi-close-circle-o"></i></a>
+                </td>
+              </tr>
+              <tr data-price="20">
+                <td class="product-thumb" data-title="Image">
+                  <span class="item-thumb">
+                    <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/item-2.jpg" alt="Mango">
+                  </span>
+                </td>
+                <td class="product-detail" data-title="Product">
+                  <a href="#">Mango</a>
+                  <span>$ 20</span>
+                </td>
+                <td class="product-quantity" data-title="Quantity">
+                  <div class="quantity">
+                    <span class="qty-plus">+</span>
+                    <input type="number" class="qty-input" value="1" min="1">
+                    <span class="qty-minus">-</span>
+                  </div>
+                </td>
+                <td class="total-price" data-title="Total">
+                  <span class="row-total">$ 20</span>
+                </td>
+                <td class="product-remove" data-title="">
+                  <a href="#"><i class="zmdi zmdi-close-circle-o"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- STEP 4: CART TOTALS -->
+        <div class="step-panel">
+          <h3 class="text-center text-uppercase">Cart Totals</h3>
+          <div class="cart-totals">
+            <table>
+              <tbody>
+                <tr class="subtotal">
+                  <th>Subtotal</th>
+                  <td id="checkout-subtotal">$90.00</td>
+                </tr>
+                <tr class="shipping">
+                  <th>Shipping:</th>
+                  <td>
+                    <!-- Shipping options — matches original .checkbox + .checkmark structure -->
+                    <div class="checkbox">
+                      <label>
+                        <input type="radio" name="shipping" checked>
+                        Free Shipping
+                        <span class="checkmark"></span>
+                      </label>
+                        <label>
+                        <input type="radio" name="shipping">
+                        Local pickup: <strong>$0.00</strong>
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <span class="calc-shipping">Calculate shipping</span>
+                  </td>
+                </tr>
+                <tr class="service">
+                  <th>Service <span><strong>(estimated for Vietnam)</strong></span></th>
+                  <td>$5.60</td>
+                </tr>
+                <tr class="order-total">
+                  <th>Total</th>
+                    <td id="checkout-total">$95.60</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Submit Error Message -->
+      <div id="submit-error" class="text-center mt-3" style="display:none; color:#dc3545; font-size:14px; font-weight:700;"></div>
+
+      <!-- ACTIONS -->
+      <div class="actions">
+        <ul class="d-flex justify-content-between align-items-center list-unstyled mb-0">
+          <li id="back-btn">
+            <a href="#" class="btn-step">Back</a>
+          </li>
+          <li id="next-btn">
+            <a href="#" class="btn-step">Continue</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast container — fixed top-right -->
+  <div id="toast-container" class="position-fixed top-0 end-0 p-3" style="z-index:9999;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
