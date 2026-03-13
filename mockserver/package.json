@@ -1,0 +1,8 @@
+{
+  "name": "assign2",
+  "version": "1.0.0",
+  "description": "Colorlib Wizard Clone — mock backend via json-server",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000"
+  }
+}

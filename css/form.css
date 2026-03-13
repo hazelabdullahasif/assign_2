@@ -1,0 +1,133 @@
+﻿/* Form layout */
+.form-row-gap { 
+  margin-bottom: 20px; 
+}
+.step-panel .form-row-gap:last-of-type { 
+  margin-bottom: 0; 
+}
+
+.wizard .row { 
+  --bs-gutter-x: 20px; 
+}
+
+/* Input fields */
+.input-holder .form-control {
+  height: 42px;
+  border: 1px solid #e6e6e6;
+  border-radius: 0;
+  padding: 0 35px 0 19px;
+  font-size: 14px;
+  color: #999;
+  background: none;
+  box-shadow: none;
+}
+
+.input-holder .form-control::placeholder { 
+  color: #999; 
+}
+
+.input-holder .form-control:focus { 
+  border-color: #8eb852; 
+  box-shadow: none; 
+}
+
+.input-holder i {
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Validation - hide Bootstrap's default icons */
+.input-holder .form-control.is-invalid,
+.input-holder .form-control.is-valid {
+  background-image: none;
+  padding-right: 35px;
+}
+
+.input-holder .form-control.is-invalid { 
+  border-color: #dc3545; 
+  box-shadow: none; 
+}
+
+.input-holder .form-control.is-valid { 
+  border-color: #198754; 
+  box-shadow: none; 
+}
+
+.input-holder .invalid-feedback { 
+  font-size: 12px; 
+  margin-top: 4px; 
+}
+
+/* Password fields */
+.input-holder.password .toggle-eye {
+  right: 44px;
+  display: none;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.input-holder.password .form-control { 
+  padding-right: 68px; 
+}
+
+.input-holder.password.eye-only .toggle-eye { 
+  right: 20px; 
+  display: block !important; 
+}
+
+.input-holder.password.eye-only .form-control { 
+  padding-right: 44px; 
+}
+
+/* Custom radio buttons for shipping */
+.checkbox label {
+  padding-left: 21px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-bottom: 13px;
+  color: #666;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.checkbox label:last-child { 
+  margin-bottom: 13px; 
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox input:checked ~ .checkmark::after { 
+  display: block; 
+}
+
+.checkbox .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  border: 1px solid #999;
+}
+
+.checkbox .checkmark::after {
+  content: "";
+  top: 2px;
+  left: 2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #999;
+  position: absolute;
+  display: none;
+}

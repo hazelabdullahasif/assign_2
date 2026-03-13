@@ -1,0 +1,48 @@
+﻿/* Action buttons */
+.actions { 
+  margin-top: 30px; 
+}
+
+.btn-step {
+  display: inline-flex;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1px;
+  background: #8eb852;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 132px;
+}
+
+.btn-step:hover { 
+  background: #a1d15e; 
+}
+
+#back-btn .btn-step { 
+  width: 97px; 
+}
+
+#next-btn .btn-step { 
+  width: 132px; 
+}
+
+#next-btn.finish .btn-step { 
+  width: 234px; 
+}
+
+#back-btn.hidden { 
+  display: none !important; 
+}
+
+#next-btn.finish { 
+  flex: 1; 
+  text-align: center; 
+}

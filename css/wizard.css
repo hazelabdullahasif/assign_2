@@ -1,0 +1,38 @@
+﻿/* Step navigation */
+.steps li { 
+  margin-right: 10.8%; 
+  cursor: pointer; 
+}
+.steps li:last-child { 
+  margin-right: 0; 
+}
+
+.step-icon { 
+  width: 86px; 
+  height: 83px; 
+}
+
+.step-arrow { 
+  top: 33%; 
+  left: 113%; 
+  max-width: 57%; 
+}
+
+.step-order { 
+  font-size: 12px; 
+  line-height: 1.2; 
+  color: #666; 
+  margin-top: 14px; 
+}
+
+/* Step panels */
+.content { 
+  margin-top: 35px; 
+}
+
+.step-panel { 
+  display: none; 
+}
+.step-panel.active { 
+  display: block; 
+}
